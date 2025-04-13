@@ -21,8 +21,8 @@ const projects = [
       'A responsive, professional portfolio to showcase my full-stack projects and skills, using React, TailwindCSS, and Framer Motion.',
     tech: ['React', 'Tailwind CSS', 'Framer Motion'],
     image: portfolioImage,
-    link: '#',
-    github: 'https://github.com/your-username/portfolio-website',
+    link: 'https://portfolio-phi-five-52.vercel.app/',
+    github: 'https://github.com/Jagruti345/Portfolio.git',
   },
   {
     title: 'Practical Management System (Backend Only)',
