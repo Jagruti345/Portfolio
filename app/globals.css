@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cyan: #22d3ee;
+  --violet: #8b5cf6;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--cyan);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar - Modern & Thin */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--cyan), var(--violet));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+/* Text Glows */
+.text-glow-cyan {
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.5), 0 0 15px rgba(34, 211, 238, 0.3);
+}
+
+.text-glow-violet {
+  text-shadow: 0 0 8px rgba(139, 92, 246, 0.5), 0 0 15px rgba(139, 92, 246, 0.3);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel:hover {
+  border-color: rgba(34, 211, 238, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Modern Button */
+.cyber-button {
+  @apply relative overflow-hidden px-8 py-3 transition-all duration-300 border;
+  border-color: rgba(34, 211, 238, 0.3);
+}
+
+.cyber-button:hover {
+  @apply border-cyan-400;
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.1);
+}
+
+/* Background Scanline for extra tech feel */
+.scanlines::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%),
+              linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02));
+  background-size: 100% 4px, 3px 100%;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.2;
+}
