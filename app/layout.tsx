@@ -18,6 +18,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Jagruti Patil | Portfolio',
   description: 'Fullstack Architect Portfolio',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
