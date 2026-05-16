@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
             <a href="#projects" className="group relative px-8 py-4 bg-cyan-500 text-black font-black uppercase text-xs tracking-widest overflow-hidden transition-all hover:shadow-[0_0_30px_rgba(34,211,238,0.3)]">
               <span className="relative z-10">Initialize_Projects</span>
             </a>
-            <a href="https://drive.google.com/file/d/1rQ3IcNs65c3b8OGWHZ-V3yfkJlE5dF57/view?usp=sharing" target="_blank" className="px-8 py-4 border border-white/10 text-white font-black uppercase text-xs tracking-widest hover:border-violet-500 hover:text-violet-400 transition-all">
+            <a href="https://drive.google.com/file/d/17kA8ZjwnYvRTbKM3rJ71H-QZZqjpAoIE/view?usp=sharing" target="_blank" className="px-8 py-4 border border-white/10 text-white font-black uppercase text-xs tracking-widest hover:border-violet-500 hover:text-violet-400 transition-all">
               Resume.manifest
             </a>
           </div>
